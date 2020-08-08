@@ -7,9 +7,9 @@ metadata:
   spec:
     ports:
       - nodePort: 30163
-        port: 8080
-       - targetPort: 8080
-       - protocol: TCP
+      - port: 8080
+      - targetPort: 8080
+      - protocol: TCP
       selector:
         app: springbootk8s
       type: NodePort
