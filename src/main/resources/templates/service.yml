@@ -10,7 +10,6 @@ metadata:
         nodePort: 30163
         port: 8080
         targetPort: 8080
-
       selector:
         app: springbootk8s
       type: NodePort
