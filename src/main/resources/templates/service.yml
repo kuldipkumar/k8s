@@ -4,12 +4,12 @@ metadata:
   name: springbootk8s
   labels:
     name: springbootk8s
-  spec:
-    ports:
-      - protocol: TCP
-        nodePort: 30163
-        port: 8080
-        targetPort: 8080
-      selector:
-        app: springbootk8s
-      type: NodePort
+spec:
+  ports:
+    - nodePort: 30163
+      port: 8080
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    app: springbootk8s
+  type: NodePort
